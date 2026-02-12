@@ -105,6 +105,24 @@ chroot_booter/
 
 - **[Architecture](docs/architecture.md)** - Technical design, boot flow, and component details
 - **[Usage Guide](docs/usage-guide.md)** - Complete usage instructions, troubleshooting, and examples
+- **[VM Testing Guide](docs/vm-testing-guide.md)** - Step-by-step guide for testing in virtual machines
+
+## Testing Without Bare Metal
+
+Don't have spare bare metal hardware? No problem! You can test Chroot Booter entirely in virtual machines:
+
+```bash
+# See the VM Testing Guide for complete instructions
+cat docs/vm-testing-guide.md
+```
+
+**Quick VM Setup:**
+1. Use Vagrant to automatically provision PXE server and test clients
+2. Or manually configure VirtualBox/KVM VMs
+3. Test the full PXE boot → load image → return → load another flow
+4. Perfect for development and CI/CD integration
+
+See **[VM Testing Guide](docs/vm-testing-guide.md)** for detailed instructions.
 
 ## How It Works
 
